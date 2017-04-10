@@ -12,11 +12,13 @@ var help = function() {
 
  var showTPS = function(type) {
    $("#logo").hide();
+   helpToBack();
    $('#tpsreport').show();
  };
 
 var searchImages = function(tag) {
   $("#logo").hide();
+  helpToBack();
   showFlickr(tag);
 };
 
