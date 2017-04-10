@@ -10,6 +10,7 @@ if (annyang) {
  var commands = {
    'help'         : help,
    'hello (there)': hello,
+   'how are you' : how,
    'show me *search': searchImages,
    'show :type report': showTPS,
    'back': pageReload
