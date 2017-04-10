@@ -1,7 +1,6 @@
 {
   "name": "xatbot",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "express": "^4.15.2"
@@ -20,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/markus636/xatbot/issues"
   },
-  "homepage": "https://github.com/markus636/xatbot#readme"
+  "homepage": "https://github.com/markus636/xatbot#readme",
+  "description": ""
 }
