@@ -20,6 +20,28 @@
   meSpeak.loadConfig("js/mespeak/mespeak_config.json");
   meSpeak.loadVoice("js/mespeak/voices/en/en-us.json");
 </script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+/* This is the example given on socket.io site
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+*/
+  var message;
+  annyang.addCallback('result', function(phrases) {
+    message = phrases[0];
+    console.log("I heard : " + message);
+    socket.emit('aiml', message);
+    console.log("I sent : " + message);
+  });
+
+  socket.on('aiml', function(msg){
+    console.log("server sent : " + msg);
+    meSpeak.speak(msg);
+  });
+
 </script>
 </head>
 <body>

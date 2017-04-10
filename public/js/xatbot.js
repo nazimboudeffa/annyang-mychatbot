@@ -9,8 +9,7 @@ if (annyang) {
  //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
  var commands = {
    'help'         : help,
-   'hello (there)': hello,
-   'how are you' : how,
+   'hello world': hello,
    'show me *search': searchImages,
    'show :type report': showTPS,
    'back': pageReload

@@ -10,10 +10,6 @@ var help = function() {
    console.log(audio);
  };
 
- var how = function () {
-     meSpeak.speak("I am fine thank you");
- }
-
  var showTPS = function(type) {
    $("#logo").hide();
    helpToBack();
