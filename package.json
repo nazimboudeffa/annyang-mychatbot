@@ -1,24 +1,25 @@
 {
   "name": "xatbot",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.15.2"
+    "aimlinterpreter": "^0.1.7",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markus636/xatbot.git"
+    "url": "git+https://github.com/thefailtheory/xatbot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/markus636/xatbot/issues"
+    "url": "https://github.com/thefailtheory/xatbot/issues"
   },
-  "homepage": "https://github.com/markus636/xatbot#readme",
-  "description": ""
+  "homepage": "https://github.com/thefailtheory/xatbot#readme"
 }
