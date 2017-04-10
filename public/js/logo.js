@@ -5,10 +5,10 @@ $(document).ready(function() {
 function rotateCircles() {
   $('div[class*="circle"]').each(function() {
     var that = this,
-      direction = ["-", "+"],
-      chosenDirection = direction[Math.floor(Math.random() * direction.length)],
-      speed = Math.floor((Math.random() * 300) + 100),
-      looper = setInterval(circleMove, 2000);
+    direction = ["-", "+"],
+    chosenDirection = direction[Math.floor(Math.random() * direction.length)],
+    speed = Math.floor((Math.random() * 300) + 100),
+    looper = setInterval(circleMove, 2000);
 
     function circleMove() {
       $(that).animate({

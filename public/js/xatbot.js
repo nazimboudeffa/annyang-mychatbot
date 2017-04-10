@@ -3,22 +3,6 @@
 // first we make sure annyang started succesfully
 if (annyang) {
 
-// define the functions our commands will run.
-var help = function() {
-  window.open("/help.html");
-};
-
- // define the functions our commands will run.
- var hello = function() {
-   var audio = document.getElementById("audio");
-	 audio.play();
-   console.log(audio);
- };
-
- var showTPS = function(type) {
-   $('#tpsreport').show();
- };
-
  // define our commands.
  // * The key is the phrase you want your users to say.
  // * The value is the action to do.
@@ -26,8 +10,9 @@ var help = function() {
  var commands = {
    'help'         : help,
    'hello (there)': hello,
-   'show me *search': showFlickr,
-   'show :type report': showTPS
+   'show me *search': searchImages,
+   'show :type report': showTPS,
+   'back': pageReload
  };
 
  // OPTIONAL: activate debug mode for detailed logging in the console
@@ -43,8 +28,9 @@ var help = function() {
 
  // Start listening. You can call this here, or attach this call to an event, button, etc.
  annyang.start();
+
 } else {
  $(document).ready(function() {
-   alert('browser unsupported use chrome');
+   alert('browser not supported use chrome');
  });
 }
