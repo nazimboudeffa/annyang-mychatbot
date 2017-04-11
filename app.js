@@ -12,12 +12,12 @@ app.get('/', function (req, res) {
 
 aimlInterpreter = require('aimlinterpreter');
 var aimlInterpreter = new aimlInterpreter(
-  {name:'test'},
-  {age: 'test'},
-  {website:'test'}
+  {name:'xatbot'},
+  {age: '26'},
+  {website:'xatbot.herokuapp.com'}
 );
 
-aimlInterpreter.loadAIMLFilesIntoArray(['./dialogs/trendy.aiml']);
+aimlInterpreter.loadAIMLFilesIntoArray(['./dialogs/xatbot.aiml']);
 
 var ans;
 
