@@ -2,11 +2,6 @@
 <aiml>
 
 <category>
-    <pattern>DROPBOX</pattern>
-    <template><bot name="website" /></template>
-</category>
-
-<category>
   <pattern>HI</pattern>
   <template>Hi!</template>
 </category>
