@@ -33,8 +33,12 @@
   annyang.addCallback('result', function(phrases) {
     message = phrases[0];
     console.log("I heard : " + message);
-    socket.emit('aiml', message);
-    console.log("I sent : " + message);
+    if (message in commands) {
+      //
+    } else {
+      socket.emit('aiml', message);
+      console.log("I sent : " + message);
+    }
   });
 
   socket.on('aiml', function(msg){

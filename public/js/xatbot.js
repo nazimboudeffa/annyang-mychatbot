@@ -1,19 +1,19 @@
 "use strict";
 
+// define our commands.
+// * The key is the phrase you want your users to say.
+// * The value is the action to do.
+//   You can pass a function, a function name (as a string), or write your function as part of the commands object.
+var commands = {
+  'help'         : help,
+  'hello world': hello,
+  'show me *search': searchImages,
+  'show :type report': showTPS,
+  'back': pageReload
+};
+
 // first we make sure annyang started succesfully
 if (annyang) {
-
- // define our commands.
- // * The key is the phrase you want your users to say.
- // * The value is the action to do.
- //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
- var commands = {
-   'help'         : help,
-   'hello world': hello,
-   'show me *search': searchImages,
-   'show :type report': showTPS,
-   'back': pageReload
- };
 
  // OPTIONAL: activate debug mode for detailed logging in the console
  annyang.debug();
