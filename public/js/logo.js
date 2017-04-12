@@ -2,40 +2,46 @@ $(document).ready(function() {
   rotateCircles();
   console.log("interval");
 });
-/*
+
 function circle3Move(speed) {
-  $(".circle3").animate({
-    rotation: speed
-  },{ duration: 2000,
-      easing: 'linear',
-      step : function(now){
-        $(".circle3").css({
-          "transform": "rotate(" + now + "deg)"
-        });
-        console.log("step");
-      }
-  });
+  var $elem = $(".circle3");
+  setInterval(function () {
+    $({deg : 0}).animate({
+      deg : 359
+    },{ duration: 2000,
+        easing: 'linear',
+        step : function(now){
+          $elem.css({
+            transform : "rotate(" + now + "deg)"
+          });
+        }
+    });
+  }, 2000);
 }
 
 function circle2Move(speed) {
-  $(".circle2").animate({
-    rotation: speed
-  },{ duration: 2000,
-      easing: 'linear',
-      step : function(now){
-        $(".circle2").css({
-          "transform": "rotate(" + now + "deg)"
-        });
-      }
-  });
+  var $elem = $(".circle2");
+  setInterval(function () {
+    $({deg : 0}).animate({
+      deg : -359
+    },{ duration: 2000,
+        easing: 'linear',
+        step : function(now){
+          $elem.css({
+            transform : "rotate(" + now + "deg)"
+          });
+        }
+    });
+  }, 2000);
 }
 
-function rotateCircles1() {
-  //circle2Move(100);
-  setInterval(circle3Move(100),2000);
-}
-*/
+function rotateCircles() {
+  circle2Move(100);
+  circle3Move(1000)
 
+}
+
+/*
 function rotateCircles() {
   $('div[class*="circle"]').each(function() {
     var that = this,
@@ -60,3 +66,4 @@ function rotateCircles() {
     circleMove();
   });
 }
+*/
