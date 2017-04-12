@@ -2,7 +2,7 @@ $(document).ready(function() {
   rotateCircles1();
   console.log("interval");
 });
-
+/*
 function circle3Move(speed) {
   $(".circle3").animate({
     rotation: speed
@@ -32,10 +32,10 @@ function circle2Move(speed) {
 
 function rotateCircles1() {
   //circle2Move(100);
-  looper = setInterval(circle3Move(100),2000);
+  setInterval(circle3Move(100),2000);
 }
+*/
 
-/*
 function rotateCircles() {
   $('div[class*="circle"]').each(function() {
     var that = this,
@@ -60,4 +60,3 @@ function rotateCircles() {
     circleMove();
   });
 }
-*/
