@@ -32,18 +32,18 @@
   var message;
   annyang.addCallback('result', function(phrases) {
     message = phrases[0];
-    console.log("I heard : " + message);
+    console.log("I hear : " + message) + " from annyang";
     if (message in commands) {
       //
     } else {
       socket.emit('aiml', message);
-      console.log("I sent : " + message);
+      console.log("I sent : " + message + " to the server");
     }
   });
 
-  socket.on('aiml', function(msg){
-    console.log("server sent : " + msg);
-    meSpeak.speak(msg);
+  socket.on('aiml', function(message){
+    console.log("I get : " + message + " from the server");
+    meSpeak.speak(message);
   });
 
 </script>
@@ -52,11 +52,11 @@
 
 <section id="logo">
   <div class="section9">
-    <div class="circle3 prop"></div>
-    <div class="void__3 prop_Void"></div>
+    <div class="circle3"></div>
+    <div class="void__3"></div>
 
-    <div class="circle2 prop"></div>
-    <div class="void__2 prop_Void"></div>
+    <div class="circle2"></div>
+    <div class="void__2"></div>
   </div>
 </section>
 

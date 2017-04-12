@@ -17,17 +17,20 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
+/*
 .prop {
   position: absolute;
   border-radius: 50%;
 }
+*/
 
+/*
 .prop_Void {
   position: absolute;
   border-radius: 50%;
   background-color: #0F0F0F;
 }
+*/
 
 .circle2 {
   width: 290px;
@@ -37,6 +40,9 @@ body {
   background: linear-gradient(40deg, #fff 40%, transparent 40%) 0 0;
   background-size: 50% 50%;
   background-repeat: no-repeat;
+  /* */
+  position: absolute;
+  border-radius: 50%;
 }
 
 .void__2 {
@@ -44,6 +50,10 @@ body {
   height: 260px;
   margin-left: 70px;
   margin-top: 70px;
+  /* */
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0F0F0F;
 }
 
 .circle3 {
@@ -54,6 +64,9 @@ body {
   background: linear-gradient(10deg, #fff 100%, transparent 100%) 0 0;
   background-size: 84% 84%;
   background-repeat: no-repeat;
+  /* */
+  position: absolute;
+  border-radius: 50%;
 }
 
 .void__3 {
@@ -61,4 +74,8 @@ body {
   height: 340px;
   margin-left: 30px;
   margin-top: 30px;
+  /* */
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0F0F0F;
 }

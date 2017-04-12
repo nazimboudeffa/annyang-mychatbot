@@ -33,8 +33,8 @@ io.on('connection', function (socket) {
     console.log(data);
   });
 */
-  socket.on('aiml', function(msg){
-    aimlInterpreter.findAnswerInLoadedAIMLFiles(msg, callback);
+  socket.on('aiml', function(message){
+    aimlInterpreter.findAnswerInLoadedAIMLFiles(message, callback);
     socket.emit('aiml', ans);
   });
 });

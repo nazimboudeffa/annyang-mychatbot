@@ -3,7 +3,7 @@
 
 <category>
   <pattern>HI</pattern>
-  <template>Hi!</template>
+  <template>Hi</template>
 </category>
 
 <category>
@@ -12,7 +12,7 @@
 </category>
 
 <category>
-  <pattern>URL</pattern>
+  <pattern>SITE</pattern>
   <template>My website is <bot name="website" /></template>
 </category>
 
@@ -22,7 +22,7 @@
 </category>
 
 <category>
-  <pattern>WHAT IS YOUR NAME?</pattern>
+  <pattern>WHAT IS YOUR NAME</pattern>
   <template>My name is <bot name="name" />.</template>
 </category>
 
@@ -32,7 +32,7 @@
 </category>
 
 <category>
-  <pattern>WHAT IS MY NAME?</pattern>
+  <pattern>WHAT IS MY NAME</pattern>
   <template>You are <get name="user" />.</template>
 </category>
 
@@ -67,11 +67,6 @@
 </category>
 
 <category>
-    <pattern>TEST THE THAT TAG</pattern>
-    <template>I start testing that.</template>
-</category>
-
-<category>
     <pattern>YOU FEEL <set name='state'>*</set></pattern>
     <template>I feel <get name='state'/>!</template>
 </category>
@@ -98,7 +93,12 @@
 
 <category>
     <pattern>WHERE *</pattern>
-    <template>In cyberspace for sure or here : http://bit.ly/1OhhLSJ</template>
+    <template>In cyberspace</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE MATRIX</pattern>
+    <template>The matrix is everywhere</template>
 </category>
 
 <category>
