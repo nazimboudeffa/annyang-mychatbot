@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  rotateCircles1();
+  rotateCircles();
   console.log("interval");
 });
 /*
