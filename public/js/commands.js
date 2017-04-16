@@ -11,9 +11,16 @@ var help = function() {
  };
 
  var showTPS = function(type) {
-   $("#logo").hide();
-   helpToBack();
-   $('#tpsreport').show();
+   if (type == "nuclear") {
+     $("#logo").hide();
+     helpToBack();
+     $('#nuclearreport').show();
+   }  else {
+     $("#logo").hide();
+     helpToBack();
+     $('#tpsreport').show();
+   }
+
  };
 
 var searchImages = function(tag) {

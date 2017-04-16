@@ -1,13 +1,12 @@
 $(document).ready(function() {
   rotateCircles();
-  console.log("interval");
 });
 
-function circle3Move(speed) {
+function circle3Move(s) {
   var $elem = $(".circle3");
   setInterval(function () {
     $({deg : 0}).animate({
-      deg : 359
+      deg : 360
     },{ duration: 2000,
         easing: 'linear',
         step : function(now){
@@ -19,11 +18,11 @@ function circle3Move(speed) {
   }, 2000);
 }
 
-function circle2Move(speed) {
+function circle2Move(s) {
   var $elem = $(".circle2");
   setInterval(function () {
     $({deg : 0}).animate({
-      deg : -359
+      deg : -360
     },{ duration: 2000,
         easing: 'linear',
         step : function(now){
@@ -38,5 +37,4 @@ function circle2Move(speed) {
 function rotateCircles() {
   circle2Move(100);
   circle3Move(1000)
-
 }
